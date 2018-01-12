@@ -3,10 +3,10 @@
 	margin:0;
 }
 ul{
-	padding-left: 90px;
+	padding-left: 30px;
 	list-style-type: none;
 	width: 100%;
-	border-top: 1px solid #808080;
+	border-top: 1px solid #ccc;
 }
 li a{
 	float: left;	
@@ -17,6 +17,7 @@ li a{
 }
 .search{
 	float: right;
+	padding-right: 30px;
 }
 .getaccess{
 	height:80px;
@@ -30,18 +31,28 @@ li a{
 .accesstext{
 	padding-top: 15px;
 }
-.buttonnav{
-	width:100px;
-	background-color: #f44336;
-	color:white;
-	float: left;
-	display: inline-block;
+.buttonnav {
+    background-color: #FF6375;
+    border: 1px;
+    color: white;
+    padding: 11px 16px;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    float: left;
+}
+
+
+.buttonnav:hover {
+	background-color: #FF495F;
+	box-shadow: 0px 8px 6px -7px #ccc;
 }
 .bb{
 	background-color: #4fc7c6;
 }
 .ll{
-	padding-left: 100px;
 	padding-top: 20px;
 	float: left;
 	width:20%;
@@ -51,10 +62,11 @@ li a{
 	width: 40%;
 	height: 100px;
 	font-size: 20px;
-	padding-top: 20px;
-	padding-right: 10px;
+	padding-left: 340px;
+	padding-top: 17px;
 }
 .cen{
+	padding-left: 250px;
 	display: block;
 	float: left;
 	width: 30%;
@@ -63,14 +75,17 @@ li a{
 	width: 100%;
 	height: 80px;
 	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 	text-align: center;
+	background-color: white;
 }
 .searchbutton{
 	float: right;	 
 }
 .belnav{
-	border-top:1px solid #808080;
-	margin-top: 50px;
+	border-top:1px solid #ccc;
+	padding-top: 10px;
 }
 .row_1{
 	height: 150px;
@@ -80,17 +95,20 @@ li a{
 .tv_picture1{
 	float: left;
 	width: 30%;
-	padding-left: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .tv_picture2{
 	float: left;
 	width: 30%;
-	padding-left: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .tv_picture3{
-	float: right;
+	float: left;
 	width: 30%;
-	padding-right: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .sizefil{
 	padding-top: 5px;
@@ -100,7 +118,7 @@ li a{
 	text-decoration: none;
 }
 .filtertypes{
-	border-top: 1px solid #808080;
+	border-top: 1px solid #ccc;
 	margin-top: 30px;
 	height: 40px;
 	text-align: center;
@@ -116,19 +134,19 @@ li a{
 .buttons{	
 	text-align: center;
 	text-decoration: none;
-	height:50px;
-	border-bottom: 1px solid #808080;
+	height:80px;
+	border-bottom: 1px solid #ccc;
 }
 .sizebuttons{
-	padding-left: 250px;
+	padding-left: 183px;
 	float: left;
 }
 .brandbuttons{
-	padding-right: 350px;
+	padding-right: 275px;
 	float: right;
 }
 .categorieslist{
-	padding-top: 10px;
+	padding-top: 13px;
 }
 figcaption{
 	display: block;
@@ -136,28 +154,36 @@ figcaption{
 .buytvrow{
 	margin-top: 50px;
 	height:200px;
+	width: 100%;
 	margin-bottom: 50px;
+	background-color: white;
 }
 .row11{
-	padding-left: 50px;
-	width: 20%;
-	float:left;
-}
-.row12{
-	padding-left: 20px;
+	margin-left: 30px;
 	width: 20%;
 	float: left;
 }
+
+.row12{
+	margin-left: 30px;
+	margin-right: 30px;
+	width: 20%;
+	float: left;
+}
+
 .row13{
-	padding-right: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
 	width: 20%;
-	float: right;
+float: left;
 }
+
 .row14{
-	padding-right: 50px;
+	margin-left: 30px;
 	width: 20%;
-	float: right;
+float: left;
 }
+
 .footer{
 	padding-top: 30px;
 	margin-top: 30px;
@@ -165,16 +191,33 @@ figcaption{
 	border-top: 1px solid #808080;	
 }
 .footerbutton1{
-	background-color:#f44336; 
-	float: left;
-	color:white;
-	margin-left: 200px;
-	width:300px;
+	background-color: #FF6375;
+    border: 1px;
+    color: white;
+    padding: 11px 16px;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    margin-left:500px;
 }
-.footerbutton2{
-	width:100px;
-	background-color:#f44336;
-	color:white;
-	margin-right: 400px;
-	float:right;
+.toolbar{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.bodycontainer{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.filterbutton{
+	background-color: #FF6375;
+    border: 1px;
+    color: white;
+    padding: 11px 16px;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;	
 }
