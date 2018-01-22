@@ -40,7 +40,7 @@ li a{
     display: inline-block;
     font-size: 14px;
     margin: 4px 2px;
-    border-radius: 4px;
+    border-radius: 6px;
     float: left;
 }
 
@@ -110,40 +110,25 @@ li a{
 	margin-left: 20px;
 	margin-right: 20px;
 }
-.sizefil{
-	padding-top: 5px;
-	padding-left: 250px;
-	float: left;
-	text-align: center;
-	text-decoration: none;
-}
-.filtertypes{
-	border-top: 1px solid #ccc;
-	margin-top: 30px;
-	height: 40px;
-	text-align: center;
-	text-decoration: none;
-}
-.brandfil{
-	padding-top: 5px;
-	padding-right: 350px;
-	float: right;
-	text-align: center;
-	text-decoration: none;
-}
+
 .buttons{	
 	text-align: center;
 	text-decoration: none;
 	height:80px;
 	border-bottom: 1px solid #ccc;
 }
-.sizebuttons{
-	padding-left: 183px;
-	float: left;
-}
-.brandbuttons{
-	padding-right: 275px;
+.sortbutton{
+	background-color: #FF6375;
+    border: 1px;
+    color: white;
+    padding: 11px 16px;
+    text-decoration: bold;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;	
 	float: right;
+	margin-right: 20px;
 }
 .categorieslist{
 	padding-top: 13px;
@@ -220,4 +205,51 @@ float: left;
     font-size: 14px;
     margin: 4px 2px;
     border-radius: 4px;	
+	float: left;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+	margin-top: 50px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	color: #4FC7C6
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.filterbut{
+	background-color: grey;
+    border: 4px;
+    color: white;
+    padding: 2px 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    border-radius: 2px;	
+	float: left;
 }

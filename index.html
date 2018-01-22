@@ -4,6 +4,8 @@
 	<title></title>
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body style="background-color: #f7f7f7;">
 	<div>
@@ -62,25 +64,66 @@
 		<div class="getaccess">
 			<center><p class="accesstext">Get Access to our newest TVs before they are live:</p> <form class="accessform" action=""><input type="text" value="Enter your e-mail address"> <input type="submit" value="Get Access"></form></center>
 		</div>
-		<div class="filter">
-			<div class="filtertypes">
-				<a class="sizefil" href="">FILTER BY SCREEN SIZE</a>
-				<a class="brandfil" href="">FILTER BY BRAND</a>
-			</div>
-			<div class="buttons">
-				<div class="sizebuttons">
-					<button class="filterbutton">20-30Inch</button>
-					<button class="filterbutton">30-40Inch</button>
-					<button class="filterbutton">40+ Inch</button><br>
-					<a href="">Show More</a>
-				</div>
-				<div class="brandbuttons">
-					<button class="filterbutton">Sony</button>
-					<button class="filterbutton">Sanyo</button>
-					<button class="filterbutton">Micromax</button><br>
-					<a href="">Show More</a>
-				</div>
-			</div>
+		<div>
+					<div id="content" class="dropdown">
+						<button class="filterbutton">Filter by Condition</button>
+						<div class="dropdown-content">
+							<input class="filterbox" type="checkbox" id="chkbox1" value="unboxed_plus" >Unboxed Plus</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox2" value="unboxed" >Unboxed</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox3" value="like_new" >Like New</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox4" value="well_used" >Well Used</a><br>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="filterbutton">Filter by Brand</button>
+						<div class="dropdown-content">
+							<input class="filterbox" type="checkbox" id="chkbox5" value="sanyo" >Sanyo</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox6" value="sony" >Sony</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox7" value="micromax" >Micromax</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox8" value="philips" >Philips</input><br>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="filterbutton">Filter by Screen Size</button>
+						<div class="dropdown-content">
+							<input class="filterbox" type="checkbox" id="chkbox9" value="20-30" >20-30Inch</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox10" value="30-40" >30-40Inch</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox11" value="40-50" >40-50Inch</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox12" value="50" >50+ Inch</input><br>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="filterbutton">Sort By</button>
+						<div class="dropdown-content">
+							<input class="filterbox" type="checkbox" id="chkbox13" value="popularity" >Popularity</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox14" value="plth" >Price:Low to High</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox15" value="phtl" >Price:High to Low</input><br>
+							<input class="filterbox" type="checkbox" id="chkbox16" value="newarrivals" >New Arrivals</input><br>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button id="clear" class="filterbutton">Clear All Filters</button>
+					</div>
+		</div>
+		<div class="appliedfilters">
+			Applied Filters:
+			<br>
+			<button class="filterbut" id="unboxed_plus">Unboxed Plus</button>
+			<button class="filterbut" id="unboxed">Unboxed</button>
+			<button class="filterbut" id="like_new">Like New</button>
+			<button class="filterbut" id="well_used">Well Used</button>
+			<button class="filterbut" id="sanyo">Sanyo</button>
+			<button class="filterbut" id="sony">Sony</button>
+			<button class="filterbut" id="micromax">Micromax</button>
+			<button class="filterbut" id="philips">Philips</button>
+			<button class="filterbut" id="20-30">20-30 Inch</button>
+			<button class="filterbut" id="30-40">30-40 Inch</button>
+			<button class="filterbut" id="40-50">40-50 Inch</button>
+			<button class="filterbut" id="50">50+ Inch</button>
+			<button class="filterbut" id="popularity">Popularity</button>
+			<button class="filterbut" id="plth">Price: Low to High</button>
+			<button class="filterbut" id="phtl">Price: High to Low</button>
+			<button class="filterbut" id="newarrivals">New Arrivals</button>
 		</div>
 		<div class="buytvrow">
 			<div>
